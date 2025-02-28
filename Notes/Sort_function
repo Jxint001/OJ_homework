@@ -1,0 +1,17 @@
+STL自带的sort函数对于compare字符的规定是严格弱序，
+    两个关键字不能同时“严格弱序”于对方
+    如果a“严格弱序”于b，且b“严格弱序”于c，则a必须“严格弱序”于c
+    如果存在两个关键字，任何一个都不“严格弱序”于另一个，则这两个关键字是相等的。
+原因在于该函数源代码中的while循环无法终止（否则）
+ 1void __unguarded_linear_insert(RandomAccessIterator last, T value)
+ 2 {
+ 3     RandomAccessIterator next = last;
+ 4     --next;
+ 5     while(value < *next)
+ 6     {
+ 7          *last = *next;
+ 8          last = next;
+ 9          --next;
+10     }
+11     *last = value;
+12 }

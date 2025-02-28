@@ -1,0 +1,8 @@
+用new和delete管理内存
+int* ptr = new int;
+int* arr = new int[10];
+MyClass* obj = new MyClass;
+
+delete ptr;
+delete[] arr;
+delete obj;

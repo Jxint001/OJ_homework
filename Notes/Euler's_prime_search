@@ -1,0 +1,17 @@
+//欧式筛选,避免重复排除一个大数
+//i为合数，j[]为质数，当i=p*j[x](j[x]为最小因数),则任意i*j[q](q为大于x的任意有意义数)，都会在未来被j[x]*j[q]筛选到
+bool prime[10000000];
+int store[10000000];
+void primechart(int b)
+{
+    int k=0;
+    memset(prime,true,sizeof(prime));
+    for(int i=2;i<=b;++i){
+        if(prime[i]==true)  store[k++]=i;
+        for(int j=0;i*store[j]<=b&&j<k;++j){
+            prime[i*store[j]]=false;
+            if(i%store[j]==0) break;//这句之所以放在后面是为了让质数^2被判断为合数，如9
+        }
+        
+    }
+}

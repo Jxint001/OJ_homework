@@ -1,0 +1,23 @@
+multimap不能用下标
+头文件：
+    #include <map>
+pair头文件：
+    #include <utility>
+定义map：
+map<type,type> name;
+type可以是pair
+插入：
+name.insert(,);
+name[i]=（）；
+删除:
+name.erase(key);
+查找：
+name.find(key);
+计数（返回值包含0）：
+name.count(key);
+用->表示指向第几个位置（key为first，value为second）
+定义pair
+pair(type,type) names;
+names也可以是数组
+插入：
+pair<type,type> namess = make_pair(type,type);

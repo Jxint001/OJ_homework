@@ -1,0 +1,3 @@
+++k k++单独出现无区别，赋值有区别
+int会自动转换为unsigned int（运算时），sizeof等返回值为size_t（unsigned int（运算时）
+static_cast<double>x/y静态类型转换

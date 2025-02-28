@@ -1,0 +1,14 @@
+(来自第一次大作业qt可视化一张图)
+double runtime；
+void AskforTime() {
+    cout << "Please enter running time" << endl;
+    while(true){
+        if(std::cin>>runtime){//if input is double type
+            break;
+        }else{  //if input is not double type(such as characters)
+            std::cin.clear();   //clear mistake sign
+            std::cin.ignore(1024,'\n');   //ignore mistakes untill next '\n' occurs
+            cout << "Invalid input! Please enter running time" << endl;
+        }
+    }
+}
