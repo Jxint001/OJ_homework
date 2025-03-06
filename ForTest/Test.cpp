@@ -252,5 +252,13 @@ int main()
 
     // const int a = 10;
     // int*p = a;//wrong
+
+    //int n;
+    //cin >> n;
+    // char a[3];
+    // cout << sizeof(a) << endl;
+    // for (int i = 0; i < 3; ++i) {a[i] = 'i'; }
+    // *(a+3) = '9';
+    //cout << a << endl;
     return 0;
 }
