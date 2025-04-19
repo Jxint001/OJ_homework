@@ -50,17 +50,24 @@ int main() {
     // int (*p)(int, int) = &returnmax;
     // printmax(p);
 
-    int&& r = 9;
-    cout << r << endl;
-    int*ptr = &r;
-    cout << &r << endl;
-    cout << ptr << endl;
-    cout << *ptr << endl;
+    // int&& r = 9;
+    // cout << r << endl;
+    // int*ptr = &r;
+    // cout << &r << endl;
+    // cout << ptr << endl;
+    // cout << *ptr << endl;
     
-    r = 10;
-    cout << r << endl;
-    cout << &r << endl;
-    cout << ptr << endl;
-    cout << *ptr << endl;
+    // r = 10;
+    // cout << r << endl;
+    // cout << &r << endl;
+    // cout << ptr << endl;
+    // cout << *ptr << endl;
+
+    // int a = 0, b = 0;
+    // const int* pc = &a;
+    // int* p = &b;
+    // p = pc;
+    // const int d = 0;
+    // int e = d;
     return 0;
 }
